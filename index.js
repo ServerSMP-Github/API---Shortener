@@ -46,7 +46,7 @@ app.use(express.urlencoded({ extended: false }));
 // <=================> Mainpage <=================>
 
 app.get('/', (req, res) => {
-  res.status(200).render("index.ejs", {
+  res.render("index.ejs", {
     url: process.env.URL
   });
 });
