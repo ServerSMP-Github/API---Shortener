@@ -33,16 +33,6 @@ app.use(cors({
 
 app.set("json spaces", 1);
 
-// <=================> Parse x-www-form-urlencoded and json & xml <=================>
-
-// <-----------> Parse application/json <----------->
-
-app.use(express.json());
-
-// <-----------> Parse application/x-www-form-urlencoded <----------->
-
-app.use(express.urlencoded({ extended: false }));
-
 // <=================> Mainpage <=================>
 
 app.get('/', (req, res) => {
@@ -58,5 +48,5 @@ require("./routes")(app);
 // <=================> Start <=================>
 
 app.listen(3000, () => {
-    console.log('server started');
+  console.log('server started');
 });
