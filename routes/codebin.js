@@ -19,7 +19,7 @@ module.exports = {
       res.render("codebin.ejs", {
         text: data.Text,
         id: data.Code,
-        url: process.env.URL,
+        url: global.config.url,
       });
     } else res.status(404).render("404.ejs");
   }
