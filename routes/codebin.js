@@ -4,7 +4,7 @@ module.exports = {
   name: "c/:code",
 
   run: async (req, res) => {
-    const array = (await axios.get("https://serversmp-api.herokuapp.com/api/codebin/list")).data.data;
+    const array = (await axios.get(`${global.config.url}/api/codebin/list`)).data.data;
 
     let result = array.filter(item => item.Code === req.params.code);
 

@@ -3,6 +3,8 @@
 const express = require('express');
 const app = express();
 
+global.config = require('./config.json');
+
 // <=================> Favicon <=================>
 
 const favicon = require('serve-favicon');
@@ -37,7 +39,7 @@ app.set("json spaces", 1);
 
 app.get('/', (req, res) => {
   res.render("index.ejs", {
-    url: process.env.URL
+    url: global.config.url
   });
 });
 
