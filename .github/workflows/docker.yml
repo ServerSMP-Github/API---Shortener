@@ -2,10 +2,10 @@ name: BuildShorten
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "v1" ]
     tags: [ "v*.*.*" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "v1" ]
 
 env:
   REGISTRY: ghcr.io
