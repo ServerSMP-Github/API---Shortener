@@ -1,7 +1,7 @@
 <br />
 <p align="center">
-  <a href="https://github.com/ServerSMP-Github/Website">
-    <img src="./icon.png" alt="web-logo">
+  <a href="https://github.com/ServerSMP-Github/API-Shortener">
+    <img src="./icon.png" alt="api-logo">
   </a>
 </p>
 
