@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="<%- url %>/img/icon.png">
+	<link rel="stylesheet" href="<%- url %>/css/reset.css">
+	<link rel="stylesheet" href="<%- url %>/css/style.css">
+  <title>ServerSMP</title>
+</head>
+<body>
+
+	<!-- loading -->
+	<div id="loading" class="center">
+		<div class="loading-box">
+			<div class="loading-bar"></div>
+		</div>
+	</div>
+
+	<!-- body -->
+	<div id="body" class="disabled">
+		<div class="container">
+
+      <div class="grid">
+        <div class="box background rounded">
+          <h1 class="box-title">Codebin+</h1>
+          <p class="box-description">Codebin+ is a site where you can upload text with support for markdown rendering and language syntax highlighting.</p>
+          <br>
+          <a class="button" href="/c/<%- codebin %>">View</a>
+          <br>
+          <br>
+          <img class="rounded shadow" src="<%- url %>/web/projects/img/projects/codebin+.png" width="90%" height="90%">
+        </div>
+
+        <div class="box background rounded">
+          <h1 class="box-title">Shorten+</h1>
+          <p class="box-description">Shorten+ is a site where you can shorten long urls.</p>
+          <br>
+          <a class="button" href="/s/<%- shorten %>">View</a>
+          <br>
+          <br>
+          <img class="rounded shadow" src="<%- url %>/web/projects/img/projects/shorten+.png" width="90%" height="90%">
+        </div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="<%- url %>/js/script.js"></script>
+
+</body>
+</html>
